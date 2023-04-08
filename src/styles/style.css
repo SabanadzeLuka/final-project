@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.light_theme_color{
+    color: rgb(75, 75, 75);
+}
+
+
+/**************** top navigaciis seqcia ******************************/
+
+.nav_top{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.container{
+    /* border: 1px solid red; */
+}
+.logo_box{
+    width: 95px;
+    height: 35px;
+}
+.logo_box img{
+    width: 100%;
+}
+.logo_text{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navigation_links a{
+    text-decoration: none;
+}
+.language_box{
+    cursor: pointer;
+}
+.language_text{
+    margin: 0;
+}
+.button{
+    border: none;
+    background-color: transparent;
+}
+.button_full{
+    color: white;
+    background-color: rgb(177, 176, 176);
+    border-radius: 6px;
+}
+#language{
+    border: none;
+    background-color: transparent;
+}
+.language_change{
+    color: rgb(75, 75, 75);
+}
+
+
+/******************* navigation baneris seqcia ****************/
+
+.banner_container{
+    padding: 0;
+}
+.bannerlogo{
+    height: 250px;
+    width: 250px;
+}
+.bannerlogo img{
+    width: 100%;
+}
+.banner_polygon{
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/src/images/landscape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
