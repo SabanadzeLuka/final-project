@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 .light_theme_color{
     color: rgb(75, 75, 75);
@@ -15,6 +15,7 @@ body{
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
 
 .container{
     /* border: 1px solid red; */
@@ -59,7 +60,15 @@ body{
 
 
 /******************* navigation baneris seqcia ****************/
-
+.page_appear{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+.page_appear.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 .banner_container{
     padding: 0;
 }
@@ -79,6 +88,78 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.left-banner{
+    height: 352px;
+    border-radius: 20px;
+    width: 55px;
+    background: linear-gradient(180deg, #5c6ee3 0%, #5c6ee3 14%, hsla(254, 74%, 65%, 1) 100%);
+
+    
+}
+.left-banner-text{
+    padding-top: 25px;
+    text-align: center;
+    margin: 0;
+    width: 55px;
+    color: white;
+    height: 40px;
+}
+.left-banner-text p{
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    /* transform: rotate(90deg); */
+}
+.left-banner-line{
+    margin-top: 30px;
+    height: 70px;
+}
+.line{
+    width: 2px;
+    height: 70px;
+    background-color: white;
+}
+.left-banner-bottom-text{
+    margin-top: 90px;
+}
+.left-banner-bottom-text p{
+    white-space: nowrap;
+    margin-bottom: 6px;
+    color:  white;
+    transform: rotate(90deg);
+}
+
+.right_banner_header{
+    line-height: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.right_banner_header span{
+    background-color: #5c6ee3;
+    padding: 6px;
+    color: white;
+}
+.button_circle{
+    margin-top: 20px;
+}
+.getStarted{
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5c6ee3;
+    color: white;
+}
+.getStarted:hover{
+    width: 136px;
+}
+.bi-arrow-down-left{
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+  
+
 
 
 
