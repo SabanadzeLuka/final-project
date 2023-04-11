@@ -24,3 +24,15 @@ if(token) {
 
 }
 
+
+// view profile on click
+const uid = localStorage.getItem("uid");
+
+
+const profileView = document.querySelectorAll(".profile_view");
+profileView.forEach((view) => {
+    view.addEventListener("click", () => {
+        window.location.href = `user.html?id=${uid}`
+    })
+})
+

@@ -2,6 +2,8 @@
 import {initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 import {getAuth, signOut} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
+import {getDatabase, set, ref, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
 // Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCMrLfjdUHR5exfv-TiGIdM6WxU8RjTnEo",
@@ -15,6 +17,7 @@ const firebaseConfig = {
  
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  const database = getDatabase(app);
    
 const logoutButton = document.getElementById("logout_btn");
 
@@ -26,3 +29,28 @@ logoutButton.addEventListener('click', () => {
       console.log(error);
     });
   });
+
+// get user data from firebase realtime database  
+const token = localStorage.getItem('user');
+const uid = localStorage.getItem("uid");
+
+const fullnameElement = document.querySelector(".full_name");
+const usernameElement = document.querySelector(".user_name");
+
+
+if(token) {
+  get(ref(database, "Users/" + uid))
+.then((snapshot) => {
+  if(snapshot.exists()) {
+    const user = snapshot.val()
+    console.log(user)
+    fullnameElement.textContent = `${user.fullname}`
+    usernameElement.textContent = `@${user.username}`
+  }
+})
+}
+
+
+
+
+  

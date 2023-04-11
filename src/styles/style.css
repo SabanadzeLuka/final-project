@@ -35,12 +35,24 @@ body{
 .navigation_links a{
     text-decoration: none;
 }
-.language_box{
+.profile_name {
     cursor: pointer;
+    line-height: 20px;
 }
-.language_text{
+.name_box{
     margin: 0;
 }
+.full_name{
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.user_name{
+    margin: 0;
+    font-size: 14px;
+    color:  rgb(75, 75, 75);
+}
+
 .button{
     border: none;
     background-color: transparent;
@@ -49,13 +61,6 @@ body{
     color: white;
     background-color: rgb(177, 176, 176);
     border-radius: 6px;
-}
-#language{
-    border: none;
-    background-color: transparent;
-}
-.language_change{
-    color: rgb(75, 75, 75);
 }
 .userProfile{
     width: 45px;
@@ -66,14 +71,17 @@ body{
 .user_profile_border{
     width: 45px;
     height: 45px;
-    border: 1px solid #5c6ee3;
+    border: 2px solid #5c6ee3;
     border-radius: 50%;
 }
 .user_inner{
-    background-color: #5c6ee3;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+.bi-person-fill{
+    color: rgb(177, 176, 176);
+    font-size: 30px;
 }
 
 #logout_btn{

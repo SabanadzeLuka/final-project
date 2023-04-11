@@ -28,6 +28,9 @@ signInButton.addEventListener("click", (e) => {
     .then((userCredential) => {
         const user = userCredential.user;
         localStorage.setItem('user' ,user.accessToken);
+        const id = user.uid
+        localStorage.setItem("uid", id);
+        console.log(id)
         
 
     })

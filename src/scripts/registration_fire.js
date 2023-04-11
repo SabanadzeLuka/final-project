@@ -38,6 +38,7 @@ signUpButton.addEventListener("click", (e)=> {
         const user = userCredentials.user;
         console.log(user);
 
+
         set(ref(database, "Users/" + user.uid), {
             fullname: fullname,
             email: email,
