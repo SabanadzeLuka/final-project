@@ -30,18 +30,25 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="right_navigation_box d-flex justify-content-end gap-5 align-items-center">
+                    <div class="right_navigation_box d-flex justify-content-end gap-3 align-items-center">
                         <div class="language_box d-flex justify-content-between align-items-center text-center gap-1">
                             <i class="bi bi-globe2 light_theme_color"></i>
                             <select id="language" class="light_theme_color">
                                 <option value="EN" class="language_change">EN</option>
                                 <option value="GE" class="language_change">GE</option>
                             </select>
-                            <!-- <p class="language_text light_theme_color">EN</p> -->
+                        </div>
+                        <div class="userProfile">
+                            <div class="user_profile_border d-flex justify-content-center align-items-center">
+                                <div class="user_inner">
+
+                                </div>
+                            </div>
                         </div>
                         <div class="buttons_box d-flex gap-2 justify-content-between align-items-center">
-                            <a href="/login.html"><button class="button light_theme_color">log in</button></a>
-                            <button class="button button_full">Register</button>
+                            <a href="/login.html"><button class="button light_theme_color" id="login_btn">log in</button></a>
+                            <a href="/registration.html"><button class="button button_full" id="registration_btn">Register</button></a>
+                            <button class="button button_full" id="logout_btn">Log out</button>
                         </div>
                     </div>
                 </div>
@@ -83,12 +90,6 @@
                     </button>
                 </div>
             </div>
-  
-            
-
-
-
-
         </div>
         <div class="banner_polygon page_appear ">
         </div>
@@ -98,5 +99,6 @@
         aaaaaaaa
     </section>
     <script src="/src/scripts/index.js"></script>
+    <script src="/src/scripts/index_fire.js" type="module"></script>
 </body>
 </html>

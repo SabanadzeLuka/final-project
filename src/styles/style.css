@@ -57,6 +57,29 @@ body{
 .language_change{
     color: rgb(75, 75, 75);
 }
+.userProfile{
+    width: 45px;
+    height: 45px;
+    display: none;
+    cursor: pointer;
+}
+.user_profile_border{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #5c6ee3;
+    border-radius: 50%;
+}
+.user_inner{
+    background-color: #5c6ee3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#logout_btn{
+    display: none;
+}
+
 
 
 /******************* navigation baneris seqcia ****************/
