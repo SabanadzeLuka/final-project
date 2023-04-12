@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+.profile_box{
+    height: 300px;
+    width: 269px;
+    background-color: #f2f2f2d2;
+    border-radius: 14px;
+    border: 1px solid rgb(200, 198, 198);
+}
+.picture_box{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #5c6ee3;
+    border-radius: 50%;
+}
+.fullName{
+    font-weight: bold;
+    font-size: 18px;
+}
+.userName{
+    font-size: 14px;
+    color: rgb(140, 139, 139);
+}
+.occupation{
+    margin-top: 6px;
+    display: none;
+}
+.names_box{
+    line-height: 10px;
+}
+.edit_profile{
+    margin-bottom: 10px;
+}
+#edit_profile_btn{
+    background-color: #5c6ee3;
+    padding: 4px;
+}
+.social_network_links{
+    display: none;
+}
+.profile_info_main_box{
+    background-color: #f2f2f2d2;
+    border: 1px solid rgb(200, 198, 198);
+    border-radius: 14px;
+    width: 715px;
+    height: 800px;
+}
+.profile_info_nav{
+    margin-top: 10px;
+}
+.profile_info_nav p{
+    margin: 0;
+    padding-bottom: 4px;
+}
+.active{
+    border-bottom: 2px solid #5c6ee3;
+}
+.alert span{
+    font-weight: bold;
+}
+.create_cv_button_box{
+    width: 120px;
+    padding-left: 10px;
+}
+#create_cv{
+    background-color: #5c6ee3;
+}
+#exampleFormControlTextarea1{
+    resize: none;
+}
+#exampleFormControlTextarea2{
+    resize: none;
+}
+#exampleFormControlTextarea3{
+    resize: none;
+}
+#exampleFormControlTextarea4{
+    resize: none;
+}
+#create_my_cv{
+    background-color: #5c6ee3;
+    width: 120px;
+    height: 40px;
+}
+.my_profile_content_yes{
+    display: none;
+}
+.user_info_name{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.header_info{
+    border-bottom: 1px solid rgb(200, 198, 198);
+}
+.header_second_info{
+    border-bottom: 1px solid rgb(200, 198, 198);
+}
+.user_info_information{
+    width: 400px;
+    white-space: normal;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+  

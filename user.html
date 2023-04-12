@@ -4,9 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Jobpilot</title>
 </head>
 <body>
+    <section class="top_navigation">
+        <div class="container nav_top mt-2">
+            <div class="row inner_nav d-flex justify-content-around align-items-center">
+                <div class="col-2">
+                    <div class="logo_box d-flex justify-content-between align-items-center">
+                        <a href="/index.html"><img src="/src/images/logo.png"></a>
+                        <a href="/index.html" class="logo_text"><p class="d-flex text-center logo_text">Jobpilot</p></a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="navigation_links d-flex justify-content-start gap-5 align-items-center text-center">
+                        <a class="light_theme_color" href>Home</a>
+                        <a class="light_theme_color" href>Search a job</a>
+                        <a class="light_theme_color" href>Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user_info mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-10">
+                    <div class="row gap-2 d-flex justify-content-between">
+                        <div class="col-3">
+                            <div class="profile_box d-flex flex-column justify-content-around align-items-center">
+                                <div class="picture_box d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-person-fill text-center d-flex"></i>
+                                </div>
+                                <div class="names_box d-flex flex-column justify-content-center align-items-center">
+                                    <p class="fullName"></p>
+                                    <p class="userName"></p>
+                                    <p class="occupation">Student</p>
+                                </div>
+                                <div class="social_network_links">
+                                    <div class="d-flex gap-2">
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-google"></i></a>
+                                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <!-- <div class="edit_profile">
+                                    <button class="button button_full" id="edit_profile_btn">Edit Profile</button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="profile_info_main_box">
+                               <div class="row">
+                                    <div class="profile_info_nav d-flex justify-content-around">
+                                        <p class="my_profile active">My profile</p>
+                                        <p class="account_settings">Account Settings</p>
+                                        <p class="bookmarks">My Bookmarks</p>
+                                    </div>
+                                    <div class="my_profile_no mt-5">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-10 d-flex flex-column">
+                                                <div class="col-12 header_info d-flex flex-column">
+                                                    <div class="basic_information d-flex gap-2">
+                                                        <p class="user_info_name">Luka Sabanadze </p>
+                                                        <i class="bi bi-geo-alt-fill"></i>
+                                                        <p class="user_info_location">No location info available</p>
+                                                    </div>
+                                                    <div class="secondary_information d-flex gap-2">
+                                                        <i class="bi bi-briefcase-fill"></i>
+                                                        <p class="user_info_occupation">No occupation available</p>
+                                                    </div>
+                                                    <div class="third_information d-flex gap-2">
+                                                        <i class="bi bi-calendar-event-fill"></i>
+                                                        <p class="user_info_birthday">No date available</p>
+                                                    </div>  
+                                                </div>
+                                                <div class="col-12 header_second_info d-flex flex-column mt-2">
+                                                    <div class="contact_information">
+                                                        <h4>Contact Information</h4>
+                                                        <div class="email_information mt-3 d-flex gap-2">
+                                                            <i class="bi bi-envelope-fill"></i>
+                                                            <p class="user_email_information">No Email available</p>
+                                                        </div>
+                                                        <div class="phone_information d-flex gap-2">
+                                                            <i class="bi bi-telephone-fill"></i>
+                                                            <p class="user_phone_information">No Phone available</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 header_third_info d-flex flex-column mt-2">
+                                                    <div class="education_information">
+                                                        <h4>Education</h4>
+                                                        <div class="user_education_information mt-3 d-flex gap-2">
+                                                            <i class="bi bi-journal-text"></i>
+                                                            <div class="textbox">
+                                                                <p class="user_info_information" id="user_edu_info">No info available</p>
+                                                            </div>
+                                                        </div>
+                                                        <h4>Experience</h4>
+                                                        <div class="user_experience_information mt-3 d-flex gap-2">
+                                                            <i class="bi bi-reception-4"></i>
+                                                            <div class="textbox">
+                                                                <p class="user_info_information" id="user_exp_info">No info available</p>
+                                                            </div>
+                                                        </div>
+                                                        <h4>Languages</h4>
+                                                        <div class="user_language_information mt-3 d-flex gap-2">
+                                                            <i class="bi bi-megaphone-fill"></i>
+                                                            <div class="textbox">
+                                                                <p class="user_info_information" id="user_lng_info">No info available</p>
+                                                            </div>
+                                                        </div>
+                                                        <h4>Skills</h4>
+                                                        <div class="user_skill_information mt-3 d-flex gap-2">
+                                                            <i class="bi bi-award-fill"></i>
+                                                            <div class="textbox">
+                                                                <p class="user_info_information" id="user_skl_info">No info available</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit_profile mt-3">
+                                                            <button class="button button_full" id="edit_profile_btn">Edit Profile</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my_profile_content_yes mt-3">
+                                        <div class="row d-flex justify-content-around account_info_form">
+                                            <div class="col-5">
+                                                <div class="d-flex justify-content-around account_info_form">
+                                                    <form class="mt-4 main_form_group">
+                                                        <div class="form-group">
+                                                        <label for="exampleInputEmail1">Full Name</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText1" aria-describedby="emailHelp" placeholder="" disabled value="">
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                        <label for="exampleInputEmail1">Email</label>
+                                                        <input type="email" class="form-control inputform" id="exampleInputEmail1" placeholder="" disabled value="">
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                            <label for="exampleInputText2">Location</label>
+                                                            <input type="text" class="form-control inputform" id="exampleInputText2" placeholder="Enter Location">
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                            <label for="exampleInputNumber1">Phone</label>
+                                                            <input type="number" class="form-control inputform" id="exampleInputNumber1" placeholder="Enter Number">
+                                                        </div>
+                                                        <div class="form-group mt-2">
+                                                            <label for="exampleInputText3">Birth Date</label>
+                                                            <input type="text" class="form-control inputform" id="exampleInputText3" placeholder="Enter Date">
+                                                            <small id="emailHelp" class="form-text text-muted">enter date in format dd/mm/yyyy</small>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputText4">Occupation</label>
+                                                            <input type="text" class="form-control inputform mt-2" id="exampleInputText4" aria-describedby="emailHelp" placeholder="">
+                                                        </div>
+                                                        <button class="button button_full mt-4" id="create_my_cv">Update My CV</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 row d-flex">
+                                                <div class="col-12">
+                                                    <div class="textarea_inputs d-flex gap-2">
+                                                        <form class="mt-3 main_form_group">
+                                                            <h4>Education</h4>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </form>
+                
+                                                        <form class="mt-3 main_form_group">
+                                                            <h4>Experience</h4>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                                                        </form>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-12">
+                                                    <div class="textarea_inputs d-flex gap-2">
+                                                        <form class="mt-3 main_form_group">
+                                                            <h4>Languages</h4>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+                                                        </form>
+                                                        <form class="mt-3 main_form_group">
+                                                            <h4>Skills</h4>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-5">
+                                                    <div class="form-group">
+                                                        <h4>Social Network</h4>
+                                                        <label for="exampleInputText5">LinkedIn</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText5" aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputText6">Twitter</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText6" aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputText7">Facebook</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText7" aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputText8">Google</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText8" aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputText9">Whatssap</label>
+                                                        <input type="text" class="form-control inputform mt-2" id="exampleInputText9" aria-describedby="emailHelp" placeholder="">
+                                                    </div>
+                                                </div>    
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="/src/scripts/user.js" type="module"></script>
     <script src="/src/scripts/user_fire.js" type="module"></script>
 </body>

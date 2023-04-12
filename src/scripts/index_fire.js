@@ -15,9 +15,9 @@ const firebaseConfig = {
     appId: "1:710880147620:web:e9aa148a5e79bd6f824e31"
   };
  
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const database = getDatabase(app);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const database = getDatabase(app);
    
 const logoutButton = document.getElementById("logout_btn");
 
