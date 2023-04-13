@@ -28,3 +28,5 @@ editCVButton.addEventListener("click", () => {
     userInfoCV.style.display = "none";
     userInputCV.style.display = "block";
 })
+
+// Nacigation hide/show content

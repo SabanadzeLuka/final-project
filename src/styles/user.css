@@ -27,7 +27,6 @@ body{
 }
 .occupation{
     margin-top: 6px;
-    display: none;
 }
 .names_box{
     line-height: 10px;
@@ -40,6 +39,9 @@ body{
     padding: 4px;
 }
 .social_network_links{
+    
+}
+.bi_social_links{
     display: none;
 }
 .profile_info_main_box{
@@ -55,6 +57,7 @@ body{
 .profile_info_nav p{
     margin: 0;
     padding-bottom: 4px;
+    cursor: pointer;
 }
 .active{
     border-bottom: 2px solid #5c6ee3;
@@ -81,14 +84,19 @@ body{
 #exampleFormControlTextarea4{
     resize: none;
 }
-#create_my_cv{
+#update_my_cv{
     background-color: #5c6ee3;
     width: 120px;
+    height: 40px;
+}
+#update_my_account{
+    background-color: #5c6ee3;
     height: 40px;
 }
 .my_profile_content_yes{
     display: none;
 }
+
 .user_info_name{
     font-weight: bold;
     font-size: 18px;
@@ -105,6 +113,14 @@ body{
     white-space: normal;
   word-wrap: break-word;
   display: inline-block;
+}
+.inputform:focus{
+    border-color: #0d30fe;
+    box-shadow: 0 0 0 0.2rem rgba(71, 25, 255, 0.527);
+}
+.textareaform:focus{
+    border-color: #0d30fe;
+    box-shadow: 0 0 0 0.2rem rgba(71, 25, 255, 0.527);
 }
 
   
