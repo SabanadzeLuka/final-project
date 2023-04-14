@@ -190,6 +190,42 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+/* section company */
+.company_header{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(111, 110, 110);;
+}
+.imgbox{
+    width: 150px;
+    height: 100px;
+}
+.imgbox img{
+    width: 100%;
+}
+.imgfilter{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.job_post_text{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(111, 110, 110);;
+}
+.text-box{
+    width: 600px;
+}
+.job_post_text{
+    margin: 0;
+}
+.post_job_box{
+    width: 200px;
+}
+#post_job{
+    background-color: #5c6ee3;
+    width: 100px;
+    height: 40px;
+}
   
   
 

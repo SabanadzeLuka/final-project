@@ -65,18 +65,18 @@
                         <div class="col-8">
                             <div class="profile_info_main_box">
                                <div class="row">
-                                    <div class="content" id="content1">
-                                        <div class="profile_info_nav d-flex justify-content-around">
-                                            <p class="my_profile active">My profile</p>
-                                            <p class="account_settings">Account Settings</p>
-                                            <p class="bookmarks">My Bookmarks</p>
-                                        </div>
+                                <div class="profile_info_nav d-flex justify-content-around">
+                                    <p class="my_profile active" data-target="content-1">My profile</p>
+                                    <p class="account_settings" data-target="content-2">Account Settings</p>
+                                    <p class="bookmarks" data-target="content-3">My Bookmarks</p>
+                                </div>
+                                    <div class="content" id="content-1">
                                         <div class="my_profile_no mt-5">
                                             <div class="row d-flex justify-content-center">
                                                 <div class="col-10 d-flex flex-column">
                                                     <div class="col-12 header_info d-flex flex-column">
                                                         <div class="basic_information d-flex gap-2">
-                                                            <p class="user_info_name">Luka Sabanadze </p>
+                                                            <p class="user_info_name"></p>
                                                             <i class="bi bi-geo-alt-fill"></i>
                                                             <p class="user_info_location">No location info available</p>
                                                         </div>
@@ -132,7 +132,7 @@
                                                                     <p class="user_info_information" id="user_skl_info">No info available</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="edit_profile mt-3">
+                                                            <div class="edit_profile mt-3 gap-3 d-flex">
                                                                 <button class="button button_full" id="edit_profile_btn">Edit Profile</button>
                                                             </div>
                                                         </div>
@@ -223,7 +223,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content" id="content2">
+                                    <div class="content" id="content-2">
                                         <div class="row d-flex justify-content-center">
                                             <div class="col-10 d-flex justify-content-center">
                                                 <div class="col-7 d-flex flex-column">
@@ -246,6 +246,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="content" id="content-3">
+                                        <p>aaa</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +257,10 @@
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
     <script src="/src/scripts/user.js" type="module"></script>
     <script src="/src/scripts/user_fire.js" type="module"></script>
+
 </body>
 </html>

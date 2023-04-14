@@ -48,6 +48,19 @@ if(token) {
     usernameElement.textContent = `@${user.username}`
   }
 })
+
+// add job posting button when user is signed
+  const jobpostbtn_box = document.querySelector(".jobpostbtn_box")
+  jobpostbtn_box.innerHTML = `
+  <div class="col-8 d-flex row">
+  <div class="text-box d-flex justify-content-center align-items-center">
+      <p class="job_post_text">To publish a career opportunity, please click the  button.</p>
+  </div>
+  <div class="post_job_box d-flex justify-content-center align-items-center">
+      <button class="button button_full" id="post_job">Post a job</button>
+  </div>
+</div>
+  `
 }
 
 
