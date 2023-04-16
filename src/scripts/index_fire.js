@@ -61,6 +61,10 @@ if(token) {
   </div>
 </div>
   `
+  const jobPosting = document.getElementById("post_job");
+  jobPosting.addEventListener("click", () => {
+    window.location.href = "carrer_post.html";
+  })
 }
 
 
