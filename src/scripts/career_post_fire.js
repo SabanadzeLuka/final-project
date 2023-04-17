@@ -45,13 +45,7 @@ function getFile(e) {
 
 
 
-// Image upload to Firebase Storage
-const publish_btn = document.getElementById("publish_btn");
-publish_btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const storageRef = sRef(storage, "images/" + fileName);
-    uploadBytes(storageRef, fileItem);
-})
+
 
 
 
@@ -60,6 +54,7 @@ publish_btn.addEventListener("click", (e) => {
 
 const Vacancy_ID = Math.floor(Math.random() * 100);
 console.log(Vacancy_ID);
+
 
 
 
@@ -98,7 +93,7 @@ btn_rep_add.addEventListener("click", (e) =>{
 
 
     
-    // Upload other data to realtime database
+    // Upload other data to realtime database and storage
 publish_btn.addEventListener("click", (e) => {
     const responsibilities = document.querySelectorAll(".responsibility_input");
     responsibilities.forEach(element => {
@@ -128,25 +123,29 @@ publish_btn.addEventListener("click", (e) => {
         jobDescription: jobDescription,
         responsibilityList: responsibilityList,
         requirementsList: requirementsList,
-        currentDate: dateString,
+        UploadDate: dateString,
 
     })
+        // Image upload to Firebase Storage
+   
+        const storageRef = sRef(storage, `images/${companyName}/` + fileName);
+        uploadBytes(storageRef, fileItem);
+
 })
 
-// const dateStr = '4/15/2023 7:52';
+// const dateStr = '4/17/2023 7:52';
 // const date = new Date(Date.parse(dateStr));
 // const currentDatee = new Date();
 
 // if (date.toDateString() === currentDatee.toDateString()) {
 //   console.log('The time difference is: today');
 // } else {
-//   const timeDiff = currentDate.getTime() - date.getTime();
+//   const timeDiff = currentDatee.getTime() - date.getTime();
 //   const seconds = Math.floor(timeDiff / 1000);
 //   const minutes = Math.floor(seconds / 60);
 //   const hours = Math.floor(minutes / 60);
 //   const days = Math.floor(hours / 24);
 
-//   console.log(`The time difference between ${dateStr} and now is:`);
 //   console.log(`${days} days`);
 // }
 

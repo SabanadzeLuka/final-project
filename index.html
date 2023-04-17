@@ -22,34 +22,36 @@
                         <a href="/index.html" class="logo_text"><p class="d-flex text-center logo_text">Jobpilot</p></a>      
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="navigation_links d-flex justify-content-start gap-5 align-items-center text-center">
-                        <a class="light_theme_color" href>Home</a>
-                        <a class="light_theme_color" href>Search a job</a>
-                        <a class="light_theme_color" href>Contact us</a>
+                <div class="col-10 d-flex align-items-center justify-content-between">
+                    <div class="col-6">
+                        <div class="navigation_links d-flex justify-content-start gap-5 align-items-center text-center">
+                            <a class="light_theme_color" href="">Home</a>
+                            <a class="light_theme_color" href="#jobs_lists">Search a job</a>
+                            <a class="light_theme_color" href>Contact us</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="right_navigation_box d-flex justify-content-end gap-3 align-items-center">
-                        <div class="userProfile profile_view">
-                            <div class="user_profile_border d-flex justify-content-center align-items-center">
-                                <div class="user_inner d-flex justify-content-center align-items-center">
-                                    <i class="bi bi-person-fill text-center d-flex"></i>
+                    <div class="col-4">
+                        <div class="right_navigation_box d-flex justify-content-end gap-3 align-items-center">
+                            <div class="userProfile profile_view">
+                                <div class="user_profile_border d-flex justify-content-center align-items-center">
+                                    <div class="user_inner d-flex justify-content-center align-items-center">
+                                        <i class="bi bi-person-fill text-center d-flex"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="profile_name profile_view d-flex justify-content-between align-items-center text-center flex-column">
-                            <div class="name_box d-flex justify-content-center flex-column align-items-center text-center">
-                                <p class="full_name"></p>
-                                <p class="user_name"></p>
+                            <div class="profile_name profile_view d-flex justify-content-between align-items-center text-center flex-column">
+                                <div class="name_box d-flex justify-content-center flex-column align-items-center text-center">
+                                    <p class="full_name"></p>
+                                    <p class="user_name"></p>
+                                </div>
+                                <div class="username_box">
+                                </div>
                             </div>
-                            <div class="username_box">
+                            <div class="buttons_box d-flex gap-2 justify-content-between align-items-center">
+                                <a href="/login.html"><button class="button light_theme_color" id="login_btn">log in</button></a>
+                                <a href="/registration.html"><button class="button button_full" id="registration_btn">Register</button></a>
+                                <button class="button button_full" id="logout_btn">Log out</button>
                             </div>
-                        </div>
-                        <div class="buttons_box d-flex gap-2 justify-content-between align-items-center">
-                            <a href="/login.html"><button class="button light_theme_color" id="login_btn">log in</button></a>
-                            <a href="/registration.html"><button class="button button_full" id="registration_btn">Register</button></a>
-                            <button class="button button_full" id="logout_btn">Log out</button>
                         </div>
                     </div>
                 </div>
@@ -86,9 +88,11 @@
                     </h2>
                 </div>
                 <div class="button_circle d-flex justify-content-center align-items-center">
-                    <button class="getStarted">Get Started
-                        <i class="bi bi-arrow-up-right"></i>
-                    </button>
+                    <a href="#jobs_lists">
+                        <button class="getStarted">Get Started
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -131,8 +135,12 @@
             </div>
         </div>
     </section>
-    <section class="jobs_list mt-5">
-        <p>aaaa</p>
+    <section class="jobs_list mt-5" id="jobs_lists">
+        <div class="container">
+            <div class="row d-flex justify-content-between available_vacancy">
+               
+            </div>
+        </div>
     </section>
     <script src="/src/scripts/index.js"></script>
     <script src="/src/scripts/index_fire.js" type="module"></script>

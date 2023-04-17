@@ -226,8 +226,67 @@ body{
     width: 100px;
     height: 40px;
 }
-  
-  
+.vacancy_inner_box{
+    padding: 10px;
+}
+.vacancy_inner_box{
+    width: 390px;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 14px;
+}
+.vacancy_inner_box p{
+    margin: 0;
+}
+.inner_logo{
+    margin-top: 12px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(197, 196, 196);
+    border-radius: 12px;
+}
+.vacancy_info_box{
+    width: 190px;
+}
+.vacancy_rest_box{
+    width: 60px;
+    height: 94px;
+}
+.items_list{
+    font-size: 10px;
+    color: rgb(96, 96, 96);
+}
+.items_list p{
+    margin: 0;
+}
+
+.items_list i{
+    font-size: 6px;
+}
+.salary{
+    font-size: 11px;
+    color: #5c6ee3;
+    font-weight: bold;
+}
+.company_name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.location{
+    font-size: 10px;
+}
+.second_list{
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+}
+.second_list i{
+    font-size: 10px;
+}
+.date{
+    font-size: 12px;
+}
+.inner_logo img{
+    width: 100%;
+}
 
 
 
