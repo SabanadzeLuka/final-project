@@ -122,6 +122,34 @@ body{
     border-color: #0d30fe;
     box-shadow: 0 0 0 0.2rem rgba(71, 25, 255, 0.527);
 }
+.inner_saved_box p{
+    margin: 0;
+    padding-left: 10px;
 
+}
+.inner_saved_box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.saved_companyname{
+    font-weight: bold;
+    font-size: 12px;
+}
+.saved_position{
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+.saved_location{
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+.bi-geo-alt-fill{
+    padding-bottom: 4px;
+    color: rgb(97, 97, 97);
+}
+.viewer{
+    margin-left: 10px;
+}
 
   

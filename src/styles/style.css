@@ -239,11 +239,11 @@ body{
 }
 .inner_logo{
     margin-top: 12px;
-    width: 55px;
-    height: 55px;
-    background-color: rgb(197, 196, 196);
+    width: 65px;
+    height: 65px;
     border-radius: 12px;
 }
+
 .vacancy_info_box{
     width: 190px;
 }
@@ -285,7 +285,17 @@ body{
     font-size: 12px;
 }
 .inner_logo img{
-    width: 100%;
+    width: 90%;
+}
+.bi-bookmark-plus-fill{
+    font-size: 26px;
+    color: #5c6ee3;
+    cursor: pointer;
+}
+.vacancies_count{
+    color: #6a7dd6;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 

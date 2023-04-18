@@ -30,18 +30,18 @@ const minute = currentDate.getMinutes()
 const dateString = month + '/' + day + '/' + year + ' ' + hour + ':' + minute;
 console.log(dateString);
 
-const fileInput = document.getElementById("fileInp");
-fileInput.addEventListener("change", getFile);
+// const fileInput = document.getElementById("fileInp");
+// fileInput.addEventListener("change", getFile);
 
-let fileItem;
-let fileName;
+// let fileItem;
+// let fileName;
 
 
-function getFile(e) {
-    fileItem = e.target.files[0];
-    fileName = fileItem.name;
-    console.log("File uploaded:", fileItem);
-}
+// function getFile(e) {
+//     fileItem = e.target.files[0];
+//     fileName = fileItem.name;
+//     console.log("File uploaded:", fileItem);
+// }
 
 
 
@@ -111,6 +111,7 @@ publish_btn.addEventListener("click", (e) => {
     const salary = document.getElementById("exampleInputText5").value;
     const seniorityLevel = document.querySelector(".seniorityLevelType").value
     const jobDescription = document.getElementById("exampleFormControlTextarea1").value;
+    const companyLogoURL = document.getElementById("exampleInputTextt").value;
     e.preventDefault();
     set(ref(database, `List of Vacancies/${companyName}/${Vacancy_ID}` ), {
         CompanyName: companyName,
@@ -124,12 +125,13 @@ publish_btn.addEventListener("click", (e) => {
         responsibilityList: responsibilityList,
         requirementsList: requirementsList,
         UploadDate: dateString,
+        URL: companyLogoURL,
 
     })
         // Image upload to Firebase Storage
    
-        const storageRef = sRef(storage, `images/${companyName}/` + fileName);
-        uploadBytes(storageRef, fileItem);
+        // const storageRef = sRef(storage, `images/${companyName}/` + fileName);
+        // uploadBytes(storageRef, fileItem);
 
 })
 

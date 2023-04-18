@@ -283,18 +283,60 @@ if(token) {
 })
 
 
-        }else{
-            userLocation.textContent = `No info available`;
-            userOccupation.textContent = `No info available`;
-            userBirthday.textContent = `No info available`;
-            phoneInformation.textContent = `No info available`;
-            userEducation.textContent = `No info available`;
-            userExperience.textContent = `No info available`;
-            userLanguage.textContent = `No info available`;
-            userSkills.textContent = `No info available`;
+    const saved_items = document.querySelector(".saved_items");
+    
+    get(ref(database, `Saved/`))
+    .then((snapshot) => {
+        const data = snapshot.val()
+        for(let key in data) {
+            const outerObj = data[key]
 
-            
+            for(let innerKey in outerObj) {
+                const innerObj = outerObj[innerKey]
+                const companyName = innerObj.CompanyName;
+                const position = innerObj.Position;
+                const location = innerObj.Location;
+                const link = innerObj.Link;
+
+                saved_items.innerHTML += `
+                    <div class="col-3 inner_saved_box ">
+                        <p class="saved_companyname">${companyName}</p>
+                        <p class="saved_position mt-3">${position}</p>
+                        <span class="d-flex gap-1 align-items-center">
+                            <p class="saved_location">${location}</p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <a href="${link}">
+                            <button class="viewer button button_full mt-1">View</button>
+                        </a>
+                    </div>
+    `
+            }
         }
+    })
+    // const savedbox = document.querySelector(".main_saved_box");
+    // savedbox.innerHTML +=`
+    // <div class="col-6 mt-5 header_titles">
+    //     <p>Carrefour</p>
+    //     <p>Developer</p>
+    //     <p>Georgia, Tbilisi</p>
+    //     <p>Link</p>
+    // </div>
+    // `
+
+
+}else{
+    userLocation.textContent = `No info available`;
+    userOccupation.textContent = `No info available`;
+    userBirthday.textContent = `No info available`;
+    phoneInformation.textContent = `No info available`;
+    userEducation.textContent = `No info available`;
+    userExperience.textContent = `No info available`;
+    userLanguage.textContent = `No info available`;
+    userSkills.textContent = `No info available`;
+
+    
+}
     })
     
    

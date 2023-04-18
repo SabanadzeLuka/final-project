@@ -76,28 +76,39 @@ const available_vacancy = document.querySelector(".available_vacancy")
 get(ref(database, `List of Vacancies/`))
 .then((snapshot) => {
   const listedVacancy = snapshot.val()
-  // console.log(listedVacancy)
+
+    const allAvailableVacancies = Object.keys(listedVacancy).length;
+    console.log(allAvailableVacancies)
+    available_vacancy.innerHTML += `
+    <div class="mt-5">
+      <p class="vacancies_count">Available Vacancies: ${allAvailableVacancies}</p>
+    </div>
+    `
+ 
+ 
   for (let key in listedVacancy) {
     const outerObj = listedVacancy[key];
+    console.log(outerObj)
   
     for (let innerKey in outerObj) {
       const innerObj = outerObj[innerKey];
-      console.log(innerObj);
+      // console.log(innerObj);
       const CompanyName = innerObj.CompanyName;
       const position = innerObj.position
       const EmployementType = innerObj.EmployementType
       const salary = innerObj.salary
       const location = innerObj.location
       const UploadDate = innerObj.UploadDate
+      const URL = innerObj.URL
 
       
       
       available_vacancy.innerHTML += `
-      <div class="col-4 vacancy_box d-flex justify-content-center">
+      <div class="col-4 mt-5 vacancy_box d-flex justify-content-center" data-id="${CompanyName}" ">
       <div class="vacancy_inner_box d-flex justify-content-between align-items-center gap-2">
           <div class="vacancy_logo_box">
-              <div class="inner_logo">
-
+              <div class="inner_logo d-flex justify-content-center align-items-center">
+              <img src="${URL}">
               </div>
           </div>
           <div class="vacancy_info_box d-flex flex-column gap-2">
@@ -114,12 +125,43 @@ get(ref(database, `List of Vacancies/`))
               </span>
           </div>
           <div class="vacancy_rest_box d-flex flex-column justify-content-between">
-              <p>aaa</p>
+          <i class="bi bi-bookmark-plus-fill text-center" data-id="${CompanyName}" position-id="${position}" location-id="${location}"></i>
               <p class="date">${UploadDate}</p>
           </div>
       </div>
   </div>
-      `
+      `;
+      
+
+      // axal pageze gadasvla
+      const vacancy_box = available_vacancy.querySelectorAll(".vacancy_box");
+      vacancy_box.forEach(element => {
+        element.addEventListener("click", () => {
+          const companyID = element.getAttribute("data-id");
+          window.open(`career_info.html?company=${companyID}`, '_blank');
+        })
+      });
+     
+      // bookmarkis gaketeba da databesshi shenaxva
+      const vacancy_save = available_vacancy.querySelectorAll(".bi-bookmark-plus-fill");
+      vacancy_save.forEach(save => {
+        save.addEventListener("click", () => {
+          const savedCompanyKey = save.getAttribute("data-id");
+          const savedpositionKey = save.getAttribute("position-id");
+          const savedlocationKey = save.getAttribute("location-id")
+          console.log(savedCompanyKey);
+      
+          set(ref(database, `Saved/${uid}/${savedCompanyKey}`), {
+            CompanyName: `${savedCompanyKey}`,
+            Position: `${savedpositionKey}`,
+            Location: `${savedlocationKey}`,
+            Link: `career_info.html?company=${savedCompanyKey}`
+          });
+        });
+      });
+      
+      
+
 
 // // Create a storage reference to the images directory for the specified company
 // const imagesRef = sRef(storage, `images/${CompanyName}`);
