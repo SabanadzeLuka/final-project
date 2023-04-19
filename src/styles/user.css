@@ -48,8 +48,7 @@ body{
     background-color: #f2f2f2d2;
     border: 1px solid rgb(200, 198, 198);
     border-radius: 14px;
-    width: 715px;
-    height: 800px;
+    height: 850px;
 }
 .profile_info_nav{
     margin-top: 10px;
@@ -151,5 +150,10 @@ body{
 .viewer{
     margin-left: 10px;
 }
-
+@media (max-width: 768px) {
+    .profile_info_nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
   

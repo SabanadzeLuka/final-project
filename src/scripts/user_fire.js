@@ -285,18 +285,16 @@ if(token) {
 
     const saved_items = document.querySelector(".saved_items");
     
-    get(ref(database, `Saved/`))
+    get(ref(database, `Saved/${userID}`))
     .then((snapshot) => {
         const data = snapshot.val()
         for(let key in data) {
             const outerObj = data[key]
-
-            for(let innerKey in outerObj) {
-                const innerObj = outerObj[innerKey]
-                const companyName = innerObj.CompanyName;
-                const position = innerObj.Position;
-                const location = innerObj.Location;
-                const link = innerObj.Link;
+            console.log(outerObj)
+                const companyName = outerObj.CompanyName;
+                const position = outerObj.Position;
+                const location = outerObj.Location;
+                const link = outerObj.Link;
 
                 saved_items.innerHTML += `
                     <div class="col-3 inner_saved_box ">
@@ -311,7 +309,6 @@ if(token) {
                         </a>
                     </div>
     `
-            }
         }
     })
     // const savedbox = document.querySelector(".main_saved_box");

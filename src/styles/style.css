@@ -231,7 +231,7 @@ body{
 }
 .vacancy_inner_box{
     width: 390px;
-    border: 1px solid rgb(197, 196, 196);
+    border: 1px solid #5c6ee3;
     border-radius: 14px;
 }
 .vacancy_inner_box p{
@@ -286,6 +286,7 @@ body{
 }
 .inner_logo img{
     width: 90%;
+    height: 80%;
 }
 .bi-bookmark-plus-fill{
     font-size: 26px;
@@ -296,6 +297,37 @@ body{
     color: #6a7dd6;
     font-weight: bold;
     font-size: 18px;
+}
+
+.burgerMenu{
+    display: none !important;
+}
+.bi-list{
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav_items--hidden {
+        display: none !important;
+      }
+    .nav_items{
+        flex-direction: column !important;
+        align-items: end !important;
+    }
+    .burgerMenu{
+        display: flex !important;
+    }
+    .navigation_links{
+        flex-direction: column !important;
+        gap:1px !important;
+        align-items: end !important;
+        justify-content: end !important;
+    }
+    .right_navigation_box{
+        flex-direction: column !important;
+        align-items: end !important;
+        justify-content: end !important;
+    }
 }
 
 

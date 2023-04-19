@@ -53,11 +53,11 @@ if(token) {
 // add job posting button when user is signed
   const jobpostbtn_box = document.querySelector(".jobpostbtn_box")
   jobpostbtn_box.innerHTML = `
-  <div class="col-8 d-flex row">
-  <div class="text-box d-flex justify-content-center align-items-center">
+  <div class="col-8 row gap-4 flex-column d-flex">
+  <div class="text-box d-flex justify-content-start align-items-center">
       <p class="job_post_text">To publish a career opportunity, please click the  button.</p>
   </div>
-  <div class="post_job_box d-flex justify-content-center align-items-center">
+  <div class="post_job_box d-flex justify-content-start align-items-center">
       <button class="button button_full" id="post_job">Post a job</button>
   </div>
 </div>
@@ -104,7 +104,7 @@ get(ref(database, `List of Vacancies/`))
       
       
       available_vacancy.innerHTML += `
-      <div class="col-4 mt-5 vacancy_box d-flex justify-content-center" data-id="${CompanyName}" ">
+      <div class="col-xl-4 col-md-6 mt-5 vacancy_box d-flex justify-content-center" data-id="${CompanyName}" ">
       <div class="vacancy_inner_box d-flex justify-content-between align-items-center gap-2">
           <div class="vacancy_logo_box">
               <div class="inner_logo d-flex justify-content-center align-items-center">

@@ -16,6 +16,14 @@ const registrationButton = document.getElementById("registration_btn")
 const logoutButton = document.getElementById("logout_btn");
 const userProfile = document.querySelector(".userProfile");
 
+const nav_items = document.querySelector(".nav_items");
+const burgerMenu = document.querySelector(".burgerMenu");
+
+burgerMenu.addEventListener("click", () => {
+  nav_items.classList.toggle("nav_items--hidden");
+});
+
+
 if(token) {
     loginButton.style.display = "none";
     registrationButton.style.display = "none";

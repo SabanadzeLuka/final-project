@@ -16,18 +16,21 @@
     <section class="top_navigation">
         <div class="container nav_top">
             <div class="row inner_nav d-flex justify-content-between align-items-center">
-                <div class="col-2">
+                <div class="col-2 col-md-2">
                     <div class="logo_box d-flex justify-content-between align-items-center">
                         <a href="/index.html"><img src="/src/images/logo.png"></a>
                         <a href="/index.html" class="logo_text"><p class="d-flex text-center logo_text">Jobpilot</p></a>      
                     </div>
                 </div>
-                <div class="col-10 d-flex align-items-center justify-content-between">
+                <div class="d-flex col-1 burgerMenu justify-content-end">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="col-12 col-md-9 d-flex align-items-center justify-content-between nav_items">
                     <div class="col-6">
                         <div class="navigation_links d-flex justify-content-start gap-5 align-items-center text-center">
+                            
                             <a class="light_theme_color" href="">Home</a>
                             <a class="light_theme_color" href="#jobs_lists">Search a job</a>
-                            <a class="light_theme_color" href>Contact us</a>
                         </div>
                     </div>
                     <div class="col-4">
@@ -57,42 +60,44 @@
                 </div>
             </div>
         </div>
-        <div class="container banner_container page_appear mt-3 d-flex justify-content-center align-items-center text-center">
-            <div class="col-1">
-                <div class="left-banner d-flex flex-column">
-                    <div class="left-banner-text d-flex justify-content-center">
-                        <p>Jobpilot</p>
+        <div class="container banner_container page_appear mt-3 d-flex justify-content-between align-items-center text-center">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-1 col-md-2">
+                    <div class="left-banner d-flex flex-column">
+                        <div class="left-banner-text d-flex justify-content-center">
+                            <p>Jobpilot</p>
+                        </div>
+                        <div class="left-banner-line d-flex justify-content-center">
+                            <div class="line"></div>  
+                        </div>
+                        <div class="left-banner-bottom-text d-flex justify-content-center">
+                            <p>No.1 Jobseeker Platform</p>
+                        </div>
                     </div>
-                    <div class="left-banner-line d-flex justify-content-center">
-                        <div class="line"></div>  
+                </div>
+                <div class="col-10 col-md-6 d-flex flex-column align-items-center">
+                    <div class="bannerlogo">
+                        <img src="/src/images/globe.png">
                     </div>
-                    <div class="left-banner-bottom-text d-flex justify-content-center">
-                        <p>No.1 Jobseeker Platform</p>
+                    <div class="banner_text">
+                        <h2 class="mb-4">Jobpilot</h2>
+                    <p>The Comprehensive Destination for Career Seekers to Take Off and Navigate the Complex World of Job Search</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-9 d-flex flex-column align-items-center">
-                <div class="bannerlogo">
-                    <img src="/src/images/globe.png">
-                </div>
-                <div class="banner_text">
-                    <h2 class="mb-4">Jobpilot</h2>
-                <p>The Comprehensive Destination for Career Seekers to Take Off and Navigate the Complex World of Job Search</p>
-                </div>
-            </div>
-            <div class="col-2 right_banner d-flex flex-column align-items-center">
-                <div class="right_banner_text">
-                    <h2 class="right_banner_header">Build Your </br>
-                        <span>Dream Career</span></br>
-                        With Us!
-                    </h2>
-                </div>
-                <div class="button_circle d-flex justify-content-center align-items-center">
-                    <a href="#jobs_lists">
-                        <button class="getStarted">Get Started
-                            <i class="bi bi-arrow-up-right"></i>
-                        </button>
-                    </a>
+                <div class="col-12 col-md-4 right_banner d-flex flex-column align-items-center">
+                    <div class="right_banner_text">
+                        <h2 class="right_banner_header">Build Your </br>
+                            <span>Dream Career</span></br>
+                            With Us!
+                        </h2>
+                    </div>
+                    <div class="button_circle d-flex justify-content-center align-items-center">
+                        <a href="#jobs_lists">
+                            <button class="getStarted">Get Started
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +142,7 @@
     </section>
     <section class="jobs_list mt-5" id="jobs_lists">
         <div class="container">
-            <div class="row d-flex justify-content-between available_vacancy">
+            <div class="row d-flex justify-content-start available_vacancy">
                
             </div>
         </div>
