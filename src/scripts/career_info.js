@@ -35,10 +35,10 @@ get(ref(database, `List of Vacancies/${companyID} `))
             const innerData = data[key]
             console.log(innerData)
             career_main_box.innerHTML += `
-            <div class="col-10 main_info_box">
+            <div class="col-10  main_info_box">
                 <div class="banner_logo"></div>
                 <div class="row d-flex col-12 inner_box">
-                    <div class="col-9 left-box">
+                    <div class="col-12 col-md-9 left-box">
                         <div class="banner_inner d-flex justify-content-between align-items-center">
                             <div class="col-2 d-flex justify-content-start align-items-center">
                                 <div class="logobox">
@@ -74,7 +74,7 @@ get(ref(database, `List of Vacancies/${companyID} `))
                             <p class="content qual_content"></p>
                         </div>
                     </div>
-                    <div class="col-3 mt-4 right_content">
+                    <div class="col-12 col-md-3 mt-4 right_content">
                         <div class="halfed">
                             <p class="right_info">Company Information</p>
                             <div class="mt-3">

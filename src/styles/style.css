@@ -305,7 +305,23 @@ body{
 .bi-list{
     font-size: 30px;
 }
-
+.footer_logo{
+    width: 24px;
+    height: 24px;
+}
+.footer_logo img{
+    width: 100%;
+}
+.footer_text{
+    font-size: 12px;
+    margin: 0;
+}
+.rights{
+    font-size: 14px;
+}
+.mt-20{
+    margin-top: 150px;
+}
 @media (max-width: 768px) {
     .nav_items--hidden {
         display: none !important;

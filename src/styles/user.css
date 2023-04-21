@@ -48,7 +48,6 @@ body{
     background-color: #f2f2f2d2;
     border: 1px solid rgb(200, 198, 198);
     border-radius: 14px;
-    height: 850px;
 }
 .profile_info_nav{
     margin-top: 10px;
@@ -150,10 +149,29 @@ body{
 .viewer{
     margin-left: 10px;
 }
+.content{
+    padding-bottom: 15px;
+}
+.saved_items{
+    padding-left: 40px;
+}
+.viewer{
+    background-color: #5c6ee3;
+}
 @media (max-width: 768px) {
+    .profile_info_nav--hidden{
+        display: none !important;
+    }
     .profile_info_nav{
         display: flex;
         flex-direction: column;
+    }
+    .profile_info_nav p{
+        width: 150px;
+        padding-left: 20px;
+    }
+    .bi-list{
+        color:#5c6ee3;
     }
 }
   

@@ -297,7 +297,7 @@ if(token) {
                 const link = outerObj.Link;
 
                 saved_items.innerHTML += `
-                    <div class="col-3 inner_saved_box ">
+                    <div class="col-10 col-md-5 col-lg-3 inner_saved_box ">
                         <p class="saved_companyname">${companyName}</p>
                         <p class="saved_position mt-3">${position}</p>
                         <span class="d-flex gap-1 align-items-center">

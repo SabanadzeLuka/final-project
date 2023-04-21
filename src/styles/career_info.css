@@ -29,8 +29,8 @@ body{
     border-bottom: 1px solid rgb(216, 216, 216);
 }
 .logobox{
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
     
 }
 .logobox img{
@@ -98,3 +98,23 @@ p{
     background-color: #5c6ee3;
     color: white;
 }
+@media (max-width: 768px) {
+    .right_content{
+        padding-left: 29px;
+        border: none;
+    }
+    .info_position{
+        font-size: 14px;
+    }
+    .middle_info_banner{
+        padding-left: 6px;
+    }
+    .logobox{
+        width: 45px;
+        height: 45px;
+    }
+    .type{
+        width: 60px;
+        height: 25px;
+    }
+} 

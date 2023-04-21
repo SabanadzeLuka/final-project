@@ -61,6 +61,15 @@ editCVButton.addEventListener("click", () => {
 })
 
 
+// burger menu
+const burgerMenu = document.querySelector(".burgerMenu");
+const nav_items = document.querySelector(".profile_info_nav");
+
+burgerMenu.addEventListener("click", () => {
+  nav_items.classList.toggle("profile_info_nav--hidden");
+});
+
+
 
 
 
